@@ -1,0 +1,396 @@
+/* =============================
+   🌸 NAIL GLAM - GLOBAL STYLES
+   ============================= */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(-45deg, #ffe4ec, #f8bbd0, #ffb6c1, #fce4ec);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* =============================
+     💅 AUTH (SIGNUP & LOGIN) PAGES
+     ============================= */
+  .auth-container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 340px;
+    margin: 5% auto;
+    padding: 2rem 1.8rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+    text-align: center;
+    animation: popIn 1s ease forwards;
+    transform: scale(0.9);
+  }
+  
+  @keyframes popIn {
+    0% { opacity: 0; transform: scale(0.8) translateY(30px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  
+  .auth-container h1 {
+    color: #e91e63;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .auth-container h2 {
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+  }
+  
+  .form-box input:focus {
+    border-color: #e91e63;
+    box-shadow: 0 0 8px rgba(233, 30, 99, 0.3);
+    outline: none;
+  }
+  
+  .glow-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #e91e63;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .glow-btn:hover {
+    background-color: #ff69b4;
+    box-shadow: 0 0 12px rgba(255, 105, 180, 0.8);
+    transform: translateY(-2px);
+  }
+  
+  #message {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    min-height: 1.2em;
+  }
+  
+  .alt-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .alt-link a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .alt-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* =============================
+     🌸 NAVBAR (HOME PAGE)
+     ============================= */
+  .navbar {
+    background: rgba(255, 255, 255, 0.3);
+    color: #e91e63;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    color: #e91e63;
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+  }
+  
+  .profile-menu {
+    position: relative;
+  }
+  
+  .profile-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ff69b4;
+    transition: 0.3s;
+  }
+  
+  .profile-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  
+  .dropdown a {
+    display: block;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .dropdown a:hover {
+    background: #ffe4ec;
+    color: #e91e63;
+  }
+  
+  .profile-menu:hover .dropdown {
+    display: block;
+  }
+  
+  /* =============================
+     💅 HERO SECTION
+     ============================= */
+  .hero {
+    text-align: center;
+    padding: 70px 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    color: #e91e63;
+    font-weight: 700;
+  }
+  
+  .hero p {
+    color: #444;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* =============================
+     🛍️ SHOP GRID & CART
+     ============================= */
+  .section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .shop-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    flex: 1;
+  }
+  
+  @media (max-width: 1200px) {
+    .product-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  @media (max-width: 900px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  @media (max-width: 600px) {
+    .product-grid { grid-template-columns: 1fr; }
+  }
+  
+  /* ===== Product Cards ===== */
+  .product {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    backdrop-filter: blur(6px);
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .product img:hover {
+    transform: scale(1.05);
+  }
+  
+  .product h3 {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .product p {
+    font-weight: bold;
+    color: #e91e63;
+  }
+  
+  .add-cart {
+    background: #ff69b4;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-cart:hover {
+    background: #ff1493;
+  }
+  
+  /* ===== Cart ===== */
+  .cart {
+    position: sticky;
+    top: 80px;
+    width: 250px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 3px solid #ffe4ec;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e91e63;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+  }
+  
+  .cart-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  
+  .cart-item p {
+    margin: 0;
+    flex-grow: 1;
+    padding: 0 10px;
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .cart-total {
+    text-align: center;
+    border-top: 2px solid #ff69b4;
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+  
+  #checkoutBtn {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #checkoutBtn:hover {
+    background: #ff1493;
+  }
+  
+  /* ===== Animated Title ===== */
+  .animated-title {
+    font-size: 2.8rem;
+    color: #ff69b4;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 40px #ff1493;
+    animation: fadeSlideGlow 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes fadeSlideGlow {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+      text-shadow: 0 0 25px #fff, 0 0 40px #ff69b4, 0 0 60px #ff1493;
+    }
+    100% {
+      opacity: 0.9;
+      transform: translateY(10px);
+      text-shadow: 0 0 15px #fff, 0 0 30px #ff69b4, 0 0 50px #ff1493;
+    }
+  }
+  
